@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  Imagens
-//
-//  Created by jplima on 26/07/22.
-//
 
 import UIKit
 

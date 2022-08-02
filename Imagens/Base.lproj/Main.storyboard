@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GkL-gw-eoa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -22,26 +22,91 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift2" translatesAutoresizingMaskIntoConstraints="NO" id="Lrn-aD-PAc">
                                 <rect key="frame" x="107" y="348" width="200" height="200"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZs-lr-A4P">
+                                <rect key="frame" x="146" y="556" width="122" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="tcB-Fx-N8l"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-11" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" image="password" title="Tela 2" imagePadding="10">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="bWi-ab-y6C" kind="show" id="wcb-gq-PVC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FZs-lr-A4P" firstAttribute="top" secondItem="Lrn-aD-PAc" secondAttribute="bottom" constant="8" id="5mq-Jf-IHU"/>
                             <constraint firstAttribute="trailing" secondItem="HPo-0e-keT" secondAttribute="trailing" id="8YY-US-HzJ"/>
                             <constraint firstItem="Lrn-aD-PAc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9RG-1h-Csu"/>
                             <constraint firstItem="HPo-0e-keT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QHh-EZ-sAj"/>
                             <constraint firstItem="Lrn-aD-PAc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9V-21-ACD"/>
                             <constraint firstItem="HPo-0e-keT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sg2-hP-g7d"/>
+                            <constraint firstItem="FZs-lr-A4P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzh-XW-l5G"/>
                             <constraint firstAttribute="bottom" secondItem="HPo-0e-keT" secondAttribute="bottom" id="yf3-zY-0MO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6B2-Qu-bTF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82.608695652173921" y="109.82142857142857"/>
+            <point key="canvasLocation" x="944.85981308411215" y="97.840172786177106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oJX-ST-qaB">
+            <objects>
+                <viewController id="bWi-ab-y6C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rso-8y-quL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="lmy-4n-VT1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Ta-ac-0rU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lmy-4n-VT1" secondAttribute="bottom" id="Kzn-Tb-cti"/>
+                            <constraint firstItem="lmy-4n-VT1" firstAttribute="leading" secondItem="8Ta-ac-0rU" secondAttribute="leading" id="Q7A-0E-Rrh"/>
+                            <constraint firstAttribute="trailing" secondItem="lmy-4n-VT1" secondAttribute="trailing" id="dF4-Ht-jks"/>
+                            <constraint firstItem="lmy-4n-VT1" firstAttribute="top" secondItem="8Ta-ac-0rU" secondAttribute="top" constant="-88" id="yxO-I3-Tzo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yv0-Mt-dTl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dU-ZG-xJz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795.7943925233644" y="97.840172786177106"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fid-UT-jol">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GkL-gw-eoa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tmX-Fb-Na7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ypB-EF-OVF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2b-ta-Yrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.859813084112147" y="97.840172786177106"/>
         </scene>
     </scenes>
     <resources>
         <image name="gradient" width="57" height="806"/>
+        <image name="password" width="22" height="22"/>
+        <image name="steve" width="1390" height="2120"/>
         <image name="swift2" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
